@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Representa um card de um produto
 class CardProduct extends StatelessWidget {
   final String image;
   final String productName;

@@ -1,3 +1,4 @@
+//tipagem para o produto
 class Product {
   String image;
   String productName;

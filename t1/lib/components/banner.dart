@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//representa um banner na tela
 class Banner extends StatelessWidget {
   final String image;
   final double width;

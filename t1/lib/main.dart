@@ -22,19 +22,15 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
         useMaterial3: true,
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class MyHomePage extends StatelessWidget {
+  MyHomePage({super.key});
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+  //Map de produtos separados por tipo: (lançamentos e ofertas)
   final Map _products = {
     'lancamentos': [
       Product(
@@ -147,6 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  //Map em torno da lista de produtos conforme o contexto
   _getProductList(context) {
     return _products[context].map((product) => CardProduct(
         image: product.image,
