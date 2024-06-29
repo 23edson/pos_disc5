@@ -99,7 +99,7 @@ class MyHomePage extends StatelessWidget {
                         child: TextField(
                             style: Theme.of(context).textTheme.headlineMedium,
                             textAlign: TextAlign.center,
-                            decoration: const InputDecoration(hintText: 'Custom'))))
+                            decoration: const InputDecoration(hintText: 'O que você procura?'))))
               ],
             ),
           )),
